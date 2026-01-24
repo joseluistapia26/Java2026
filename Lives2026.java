@@ -1,35 +1,3 @@
-package lives2026;
-
-import javax.swing.JOptionPane;
-
-/**
- *
- * @author Jose Luis
- */
-public class Lives2026 {
-
-    public static void main(String[] args) {
-        ejemplo2();
-    }
-    
-    private static void prueba(){
-        System.out.println("Bienvenidos a Java");
-        int numero;
-        numero = 10;
-        System.out.println("Valor :"+numero);
-        String nombre;
-        nombre = "Jose Luis";
-        System.out.println("Mi nombre es "+nombre);
-        boolean res;
-        res = true;
-        System.out.println("Booleano "+res);  
-    }
-    
-    private static void ejemplo1(){
-        String nombre;
-        int num ;
-        var numero =0package lives2026;
-
 import javax.swing.JOptionPane;
 
 /**
@@ -82,3 +50,4 @@ public class Lives2026 {
     }
     
 }
+
