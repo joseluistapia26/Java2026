@@ -13,7 +13,7 @@ public class Lives2026 {
    
     
     public static void main(String[] args) {
-        ejemplo5();
+        ejemplo6();
     }
     
     private static void prueba(){
@@ -79,6 +79,23 @@ public class Lives2026 {
         v2 = lec.nextDouble();
         r = Elementos.suma(v1, v2);
         Elementos.imprimir("La suma es:"+r);
+        System.out.println("Total: %.2f".formatted(r));
     }
     
+    private static void ejemplo6(){
+        Elementos obE = new Elementos();
+        Elementos obE2 = new Elementos();
+        Elementos.imprimir("Clase 3");
+        obE2.setNombre("Python");
+        System.out.println("Valor "+obE2.getNombre());
+        Elementos obE3 = new Elementos("Java",20);
+        System.out.println(obE3.getNombre());
+        System.out.println(obE3.edad);
+        Elementos obj = new Elementos("C++");
+        obj.edad=10;
+        System.out.println(obj.getNombre());
+        System.out.println(obj.getData());
+    } 
+    
 }
+
