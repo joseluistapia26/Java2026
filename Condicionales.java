@@ -12,9 +12,11 @@ import java.util.Scanner;
  * @Date 29-01-2026
  */
 public class Condicionales {
+    
+    static Scanner lc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        eje4();
+        eje6();
     }
 
     private static void eje1() {
@@ -77,5 +79,46 @@ public class Condicionales {
              System.out.println("Es del Campo");
         }
     }
-
+    
+    private static void eje5(){
+        String estudiante, asignatura, dato;
+        double n1,n2,n3,pr;
+        System.out.print("Estudiante:");
+        estudiante = lc.nextLine();
+        System.out.print("Asignatura:");
+        asignatura = lc.nextLine();
+        System.out.print("Nota 1:");
+        dato = lc.nextLine();
+        n1 = Double.parseDouble(dato);
+        System.out.print("Nota 2:");
+        dato = lc.nextLine();
+        n2 = Double.parseDouble(dato);
+        System.out.print("Nota 3:");
+        dato = lc.nextLine();
+        n3 = Double.parseDouble(dato);
+        pr = (n1+n2+n3)/3;
+        System.out.println("El promedio es:"+pr);
+        if (pr<0 || pr>10) {
+            System.out.println("Promedio Incorrecto!");
+        }else{
+            if(pr>=0 && pr<7){
+                System.out.println(estudiante+" esta Reprobado!");
+            }
+            if(pr>=7 && pr<=10){
+                System.out.println(estudiante+" esta Aprobado");
+            }
+        }
+    }
+    
+    private static void eje6(){
+        Inputs inp = new Inputs();
+        var nombre = inp.inputStr("Nombre:");
+        var apellido = inp.inputStr("Apellido:");
+        var direccion = inp.inputStr("Direccion:");
+        var edad = inp.inputInt("Edad:");
+        var sueldo = inp.inputDouble("Sueldo:");
+        System.out.println(nombre+" - "
+                +apellido+" - "+direccion+
+                " - "+edad+" - "+sueldo);  
+    }
 }
